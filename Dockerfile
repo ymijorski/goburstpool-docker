@@ -14,6 +14,6 @@ RUN apt-get --purge remove -y git build-essential
 RUN apt-get autoremove -y && apt-get clean autoclean
 RUN rm -rf /var/lib/{apt,dpkg,cache,log} /tmp/* /var/tmp/*
 
-EXPOSE 80
+EXPOSE 8124
 
 ENTRYPOINT ./goburstpool

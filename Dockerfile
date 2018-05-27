@@ -15,5 +15,7 @@ RUN apt-get autoremove -y && apt-get clean autoclean
 RUN rm -rf /var/lib/{apt,dpkg,cache,log} /tmp/* /var/tmp/*
 
 EXPOSE 8124
+EXPOSE 8080
+EXPOSE 7777
 
 ENTRYPOINT ./goburstpool
